@@ -1,0 +1,25 @@
+ALGORITHM palindrome
+// DECLARATION DES VARIABLES
+VAR
+    mot:CHAR;
+    T:ARRAY;
+
+BEGIN
+// pour un mot vide ou contenant un seul caractère
+IF (length(mot)<=1) THEN
+    write " le mot est palindrome"
+
+END_IF
+
+
+    FOR i FROM 1 TO length(mot) STEP 1  DO
+    IF (T[i]= T[length(mot)]) THEN
+    write" le mot est palindrome"
+    i:=i+1 and length (mot):= length (mot)-1
+    else 
+    write" le mot n'est pas palindrome"
+        
+    END_IF
+    
+    END_FOR
+END
